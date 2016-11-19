@@ -1,0 +1,51 @@
+{
+    "main-tab":{
+        "TAB_TITLE":"Блок управления инновациями",
+        "VIEW_TITLE":"БУИ"
+    },
+    "map-tab":{
+        "TAB_TITLE":"Карта",
+        "VIEW_TITLE":"Карта событий"
+    },
+    "list-tab":{
+        "TAB_TITLE":"Список",
+        "VIEW_TITLE":"Ближайшие"
+    },
+    "create":{
+        "TAB_TITLE":"Создать",
+        "VIEW_TITLE":"Новое событие"
+    },
+    "auth":{
+        "TITLE":"Авторизация",
+        "LOGIN":"Вход",
+        "FACEBOOK":"Вход через Facebook",
+        "LOGIN_PLACEHOLDER":"Логин",
+        "PASS_PLACEHOLDER":"Пароль",
+        "registration":{
+          "BUTTON_TITLE":"Регистрация",
+          "EMAIL": "Email",
+          "PASS":"Пароль",
+          "NAME":"Имя",
+          "REGISTRATION_BUTTON_TITLE":"Зарегистрироваться",
+          "validation":{
+              "NOT_EMAIL":"Вы ввели не Email",
+              "REQ_EMAIL":"Email - обязательное поле",
+              "REQ_PASS":"Пароль - обязательное поле",
+              "MIN_PASS":"Пароль - минимум 4 символов",
+              "MAX_PASS":"Пароль - максимум 10 символов",
+              "REQ_NAME":"Имя - обязательное поле",
+              "MIN_NAME":"Имя - минимум 2 букв",
+              "MAX_NAME":"Имя - максимум 10 букв"
+          },
+          "connectionErrors":{
+              "401":"Неверный логин или пароль",
+              "500": "Сервис недоступен",
+              "0": "Отсутствует подключение к интернету",
+              "-1": "Кириллические символы недопустимы",
+              "DEFAULT":"Ошибка "
+          }
+        },
+        "Cancel":"Отмена"
+        
+    }
+}

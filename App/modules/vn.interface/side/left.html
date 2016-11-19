@@ -1,0 +1,74 @@
+﻿<ion-view view-title="Left Menu" on-swipe-left="vm.closeMe()">
+    <ion-header-bar class="bar-calm">
+        <h1 class="title">Меню</h1>
+    </ion-header-bar>
+    <ion-content >
+        <ion-checkbox ng-repeat="(key,value) in vm.filters track by $index" ng-model="vm.filters[$index].checked" ng-click="vm.toggleFilter($index)">{{vm.filters[$index].name}}</ion-checkbox>
+      <!--  <ion-checkbox  ng-model="vm.purple">Purple</ion-checkbox>
+        <ion-checkbox  ng-model="vm.green">Green</ion-checkbox>
+        <ion-checkbox  ng-model="vm.black">Black</ion-checkbox>
+        <ion-checkbox  ng-model="vm.gray">Gray</ion-checkbox>-->
+
+        <!--<ion-list>
+            <ion-item class="item-icon-left">
+                <i class="icon ion-email"></i>
+                Check mail
+            </ion-item>
+
+            <ion-item class="item-icon-left item-icon-right">
+                <i class="icon ion-chatbubble-working"></i>
+                Call Ma
+                <i class="icon ion-ios7-telephone-outline"></i>
+            </ion-item>
+
+            <ion-item class="item-icon-left">
+                <i class="icon ion-mic-a"></i>
+                Record album
+                <span class="item-note">
+                    Grammy
+                </span>
+            </ion-item>
+
+            <ion-item class="item-icon-left">
+                <i class="icon ion-person-stalker"></i>
+                Friends
+                <span class="badge badge-calm">0</span>
+            </ion-item>
+
+            <ion-item class="item-icon-left item-divider">
+                Activities
+            </ion-item>
+
+            <ion-item class="item-icon-left">
+                <i class="icon ion-flask"></i>
+                Breaking Bad
+                <span class="item-note">
+                    Blue, yellow, pink
+                </span>
+            </ion-item>
+
+            <ion-item class="item-icon-left">
+                <i class="icon ion-music-note"></i>
+                Music
+                <span class="item-note">
+                    JT
+                </span>
+            </ion-item>
+
+            <ion-item class="item-icon-left">
+                <i class="icon ion-game-controller-b"></i>
+                Games
+                <span class="item-note">
+                    Super Mario
+                </span>
+            </ion-item>
+
+            <ion-item class="item-icon-left item-icon-right">
+                <i class="icon ion-bag"></i>
+                Shopping
+                <i class="icon ion-arrow-right-c"></i>
+            </ion-item>
+        </ion-list>-->
+
+    </ion-content>
+</ion-view>

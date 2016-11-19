@@ -1,0 +1,50 @@
+{
+    "main-tab":{
+        "TAB_TITLE":"My events",
+        "VIEW_TITLE":"My events"
+    },
+    "map-tab":{
+        "TAB_TITLE":"Map",
+        "VIEW_TITLE":"Events map"
+    },
+    "list-tab":{
+        "TAB_TITLE":"List",
+        "VIEW_TITLE":"Nearest for you"
+    },
+    "create":{
+        "TAB_TITLE":"Create",
+        "VIEW_TITLE":"New event"
+    },
+    "auth":{
+        "TITLE":"Authorisation",
+        "LOGIN":"Enter",
+        "FACEBOOK":"Facebook Enter",
+        "LOGIN_PLACEHOLDER":"Login",
+        "PASS_PLACEHOLDER":"Password",
+        "registration":{
+          "BUTTON_TITLE":"Registration",
+          "EMAIL": "Email",
+          "PASS":"Password",
+          "NAME":"Name",
+          "REGISTRATION_BUTTON_TITLE":"Registration",
+          "validation":{
+              "NOT_EMAIL":"Enter valid Email",
+              "REQ_EMAIL":"Email - required",
+              "REQ_PASS":"Password - required",
+              "MIN_PASS":"Password - 4 symbols min",
+              "MAX_PASS":"Password - 10 symbols max",
+              "REQ_NAME":"Name - required",
+              "MIN_NAME":"Name - 2 symbols min",
+              "MAX_NAME":"Name - 10 symbols max"
+          },
+          "connectionErrors":{
+              "401":"Invalid login or password",
+              "500": "Service not available",
+              "0": "No internet connection",
+              "-1": "Use english symbols",
+              "DEFAULT":"Error "
+          }
+        },
+        "Cancel":"Cancel"
+    }
+}

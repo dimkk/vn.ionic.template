@@ -1,0 +1,60 @@
+{
+  "name": "App",
+  "dependencies": {
+    "ionic": "1.1.1",
+    "angular-mocks": "~1.4.2",
+    "angular-google-maps": "~2.3.3",
+    "ngCordova": "~0.1.23-alpha",
+    "facebook-connect-plugin": "https://gist.githubusercontent.com/pc035860/74d5cbe97ead9e2d944e/raw/8e0b7346b0e43d4c42d2bad5613a30e3f5727d2d/facebookConnectPlugin.js",
+    "jquery": "~2.1.4",
+    "ionic-rating": "~0.1.0",
+    "angular-cache": "~4.4.2",
+    "angular-moment": "^0.10.3",
+    "satellizer": "^0.14.0",
+    "ionic-toast": "https://github.com/valbar/ionic-toast.git#^0.2.1",
+    "lodash": "3.10.1",
+    "angular-translate": "^2.11.0",
+    "angular-translate-loader-static-files": "^2.11.0",
+    "ng-cordova-oauth": "^0.2.6",
+    "ionic-platform-web-client": "^0.7.1",
+    "bower": "*",
+    "install": "^1.0.4",
+    "angular-google-places-autocomplete": "^0.2.7",
+    "bootstrap": "3.3.5"
+  },
+  "overrides": {
+    "ionic": {
+      "main": [
+        "**/ionic.bundle.js",
+        "**/**/*.scss",
+        "**/release/fonts/**.*"
+      ]
+    },
+    "angular": {
+      "ignore": true
+    },
+    "moment": {
+      "main": "min/moment-with-locales.min.js"
+    },
+    "angular-animate": {
+      "ignore": true
+    },
+    "angular-sanitize": {
+      "ignore": true
+    },
+    "angular-ui-router": {
+      "ignore": true
+    },
+    "angular-mocks": {
+      "dependencies": {
+        "angular": "1.4.3"
+      }
+    }
+  },
+  "devDependencies": {
+    "ionic-platform-web-client": "^0.7.1"
+  },
+  "resolutions": {
+    "angular": "1.4.3"
+  }
+}

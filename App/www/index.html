@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos; *; style-src  &apos;self&apos; &apos;unsafe-inline&apos; *">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>app</title>
+
+    <!-- injcss:css -->
+    <link rel="stylesheet" href="debug/animate.css">
+    <link rel="stylesheet" href="debug/main.css">
+    <link rel="stylesheet" href="debug/ion-place-autocomplete/ion-place-autocomplete.css">
+    <link rel="stylesheet" href="debug/angular-google-places-autocomplete/dist/autocomplete.min.css">
+    <link rel="stylesheet" href="debug/angular-google-places-autocomplete/src/autocomplete.css">
+    <link rel="stylesheet" href="debug/ionic-toast/src/style.css">
+    <!-- endinject -->
+
+    <link href="platform.css" rel="stylesheet">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&sensor=false"></script>
+
+</head>
+<body disable-tap="">
+<div id="fb-root"></div>
+  <ion-side-menus>
+
+        <!-- Main content -->
+        <ion-side-menu-content drag-content="false" ng-controller="navigationController as vm">
+            <div ng-include="" src="&apos;modules/vn.interface/tabs/templates/wrapper.html&apos;"></div>
+        </ion-side-menu-content>
+
+        <!-- Left menu -->
+        <ion-side-menu side="left" ng-controller="sideController as vm">
+            <div ng-include="" src="&apos;modules/vn.interface/side/left.html&apos;"></div>
+        </ion-side-menu>
+    </ion-side-menus>
+
+    <!-- rls:js -->
+    <!--<script src="release/app.min.js"></script>-->
+    <!-- endinject -->
+    
+    <!-- rls:css -->
+    <!-- endinject -->
+
+    <!-- JS dependencies -->
+    <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+<!-- <script src="cordova.js"></script> -->
+    <script src="platformOverrides.js"></script>
+    <script src="libs/lodash/lodash.js"></script>
+    <!-- vendor:js -->
+    <script src="libs/ionic/release/js/ionic.bundle.js"></script>
+    <script src="libs/ngCordova/dist/ng-cordova.js"></script>
+    <script src="libs/ng-cordova-oauth/dist/ng-cordova-oauth.js"></script>
+    <script src="libs/moment/min/moment-with-locales.min.js"></script>
+    <script src="libs/markerclustererplus/src/markerclusterer.js"></script>
+    <script src="libs/js-rich-marker/src/richmarker.js"></script>
+    <script src="libs/jquery/dist/jquery.js"></script>
+    <script src="libs/ionic-toast/src/ionic-toast.js"></script>
+    <script src="libs/google-maps-utility-library-v3-markerwithlabel/dist/markerwithlabel.js"></script>
+    <script src="libs/google-maps-utility-library-v3-keydragzoom/dist/keydragzoom.js"></script>
+    <script src="libs/google-maps-utility-library-v3-infobox/dist/infobox.js"></script>
+    <script src="libs/angular-simple-logger/dist/angular-simple-logger.js"></script>
+    <script src="libs/angular-google-places-autocomplete/src/autocomplete.js"></script>
+    <script src="libs/angular-google-places-autocomplete/dist/autocomplete.min.js"></script>
+    <script src="libs/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="libs/angular-cache/dist/angular-cache.js"></script>
+    <script src="libs/satellizer/satellizer.js"></script>
+    <script src="libs/lodash/lodash.js"></script>
+    <script src="libs/ionic-rating/ionic-rating.js"></script>
+    <script src="libs/install/detect-zoom.js"></script>
+    <script src="libs/facebook-connect-plugin/index.js"></script>
+    <script src="libs/angular-translate/angular-translate.js"></script>
+    <script src="libs/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="libs/angular-moment/angular-moment.js"></script>
+    <script src="libs/angular-mocks/angular-mocks.js"></script>
+    <!-- endinject -->
+    <script src="libs/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+    <!-- injjs:js -->
+    <script src="debug/app.js"></script>
+    <!-- endinject -->
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<ion-view  view-title="{{'list-tab.VIEW_TITLE' | translate}}">
+	<ion-content class="slide-in-both-ways">
+		<ion-refresher pulling-text="Отпустите, чтобы обновить" on-refresh="vm.doRefresh()">
+		</ion-refresher>
+		<ion-item chat-item 
+		class="item item-avatar" 
+		on-tap="vm.goItem(item.id);" 
+		item-width="100%" 
+		item-height="120px" 
+		collection-repeat="item in vm.list">
+				<img class="f-list-img" ng-src="{{item.orgPhotoUrl}}"></img>
+					<div class="white circle"></div>
+					<div class="{{item.type}} circle"></div>
+					<span class="item-note">{{item.distance | distanceFilter}}</span>
+					<h2>{{item.title}}!</h2>
+					<p>{{item.dateTime | dateGmtOffset | dateAndLeftTime :'час':'часа':'часов':'минута':'минуты':'минут':'уже идет':'через':false}}</p>
+					
+				<p class="faddress">{{item.address || item.coords.latitude + ', ' + item.coords.longitude}}</p>
+				<p class="description" >{{item.description}}</p>
+		</ion-item>	
+		<ion-infinite-scroll ng-if="vm.count < 10 && vm.list.length > 0" on-infinite="vm.loadMore()" distance="1%">
+		</ion-infinite-scroll>
+	</ion-content>
+</ion-view>
+<style>
+	
+	.underline{
+		text-decoration: underline;
+	}
+	ion-item.item-avatar{
+		padding-left: 88px;
+	}
+	p.faddress{
+		font-size:10px;
+	}
+	.circle{
+		border-radius: 50%;
+		position: absolute;
+		top: 33px !important;
+		left: 14px !important;
+		width: 54px !important;
+		height: 54px !important;
+		z-index: -1;
+	}
+	.purple.circle{
+		background-color:#800080;;
+	}
+	.red.circle{
+		background-color:#B30808;;
+	}
+	.green.circle{
+		background-color:darkgreen;;
+	}
+	.black.circle{
+		background-color:#000000 ;
+	}
+	.gray.circle{
+		background-color:#888888  ;
+	}
+	.blue.circle{
+		background-color:darkblue;;
+	}
+	.white.circle{
+		z-index: 0;
+		left: 20px !important;
+		background-color:white;;
+	}
+	.f-list-img {
+		z-index: 1;
+		top: 33px !important;
+		left: 24px !important;
+		max-width: 55px !important;
+		max-height: 55px !important;
+	}
+	
+	.item h2 {
+		font-weight: 600 !important;
+		margin: 0 0 0px !important;
+	}
+	
+	.item p {
+		margin-bottom: 0px;
+	}
+	
+	.item p.description {
+		height: 30px;
+	    white-space: normal;
+	    line-height: 1;
+		font-size: 14px !important;
+		color: #C5C5C5;
+	}
+	
+	.item p.description-selected {
+		height: inherit !important;
+		font-size: 14px !important;
+		color: black !important;
+		white-space: normal !important;
+		line-height: normal !important;
+	}
+</style>

@@ -1,0 +1,15 @@
+{
+  "name": "App",
+  "app_id": "",
+  "gulpStartupTasks": ["watch"],
+  "proxies": [
+    {
+      "path": "/v1",
+      "proxyUrl": "https://gr-backend.appspot.com/v1"
+    }
+  ],
+  "watchPatterns": [
+    "./www/debug/app.js",
+    "./www/debug/app.css",
+    "./www/modules/**/*.html" ]
+}

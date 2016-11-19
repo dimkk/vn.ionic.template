@@ -1,0 +1,25 @@
+{
+  "name": "flashmob v.0.5",
+  "app_id": "0a2ba97f",
+  "proxies": [
+    {
+      "path": "/v1",
+      "proxyUrl": "https://gr-backend.appspot.com/v1"
+    }
+  ],
+  "gulpStartupTasks": [
+    "watch"
+  ],
+  "watchPatterns": [
+    "./www/debug/app.js",
+    "./www/debug/app.css",
+    "./www/modules/**/*.html"
+  ],
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ]
+}
